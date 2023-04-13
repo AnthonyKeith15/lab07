@@ -10,7 +10,7 @@ async function handleSignup(req, res, next) {
       user: userRecord,
       token: userRecord.token
     };
-    res.status(200).json(output);
+    res.status(201).json(output);
   } catch (e) {
     console.error(e);
     next(e);
